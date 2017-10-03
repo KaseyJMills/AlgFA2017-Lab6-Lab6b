@@ -1,0 +1,83 @@
+class Customer{
+  accountName;
+  address;
+  paymentNumber;
+  phone;
+    
+  private String getAccountName(String xAccountName ) {
+			accountName = xAccountName;
+			return accountName;
+	}
+	 private String getAddress (String xAddress ) {
+			address = xAddress;
+			return address;
+	}
+	 private int getPaymentNumber(int xPaymentNumber) {
+			paymentNumber = xPaymentNumber;
+			return paymentNumber;
+	}
+	 private String getPhone(String xPhone) {
+			phone = xPhone;
+			return phone;
+	}
+  
+  1 -- 1 Account;
+  }
+
+
+class Account{
+  int accountNumber;
+  int paymentNumber;
+  int accountName;
+  int shipmentAddress;
+  
+  private int getAccountNumber(xAccountNumber){
+      accountNumber = xAccountNumber;
+      return accountNumber;
+  }
+  
+   private int getPaymentNumber(int xPaymentNumber) {
+     paymentNumber = xPaymentNumber;
+     return paymentNumber;
+	}
+  
+  private String getAccountName(String xAccountName ) {
+			accountName = xAccountName;
+			return accountName;
+	}
+  
+  private String getShipmentAddress (String xShipmentAddress ) {
+			shipmentAddress = xShipmentAddress;
+			return shipmentAddress;
+	}
+  
+  1 -- * Order;
+}
+
+class Order{
+ int creationDate;
+ int shipmentDate;
+ int orderNumber;
+ int totaledOrder;
+  
+  
+  private String getCreationDate (String xCreationDate) {
+		 creationDate = xCreationDate;
+		 return creationDate;
+	}
+	
+	 private String getShipmentDate (String xShipmentDate) {
+			shipmentDate = xShipmentDate;
+			return shipmentDate;
+	}
+	 
+	 private int getOrderNumber (int xOrderNumber) {
+			orderNumber = xOrderNumber;
+			return orderNumber;
+	}
+	 private int getTotaledOrder (int xTotaledOrder ) {
+			totaledOrder = xTotaledOrder;
+			return totaledOrder;
+	}
+  
+}
