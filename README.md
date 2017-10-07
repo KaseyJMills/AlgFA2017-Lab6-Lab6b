@@ -1,0 +1,1 @@
+My code and the generated code was similar, but different in terms of detail. Umple generated code had comments, error catching, and created its own logic based on the diagram. This could be useful for someone who visually designs their programs and possibly cut down on translation time.   
